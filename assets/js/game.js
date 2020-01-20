@@ -53,23 +53,21 @@ startGame = () => {
   getNewQuestion();
 };
 
-
 timer = () => {
   timerCount--;
   if (timerCount === 0) {
-    clearInterval (timerInterval)
+    clearInterval(timerInterval);
     localStorage.setItem("mostRecentScore", score);
     //go to the end page
     return window.location.assign("end.html");
-  }
-  else{
-    timerElement.textContent = timerCount
+  } else {
+    timerElement.textContent = timerCount;
   }
 };
 
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-    clearInterval (timerInterval)
+    clearInterval(timerInterval);
     localStorage.setItem("mostRecentScore", score);
     //go to the end page
     return window.location.assign("end.html");
@@ -106,8 +104,7 @@ choices.forEach(choice => {
     if (classToApply === "correct") {
       timerCount = timerCount + 10;
       incrementScore(CORRECT_BONUS);
-    }
-    else{
+    } else {
       timerCount = timerCount - 10;
     }
 
