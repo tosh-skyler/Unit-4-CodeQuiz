@@ -10,4 +10,4 @@ The following features are:
 
 *Saving highscores to local storage
 
-Page link: https://tosh-skyler.github.io/code-quiz/
+Page link: https://tosh-skyler.github.io/Unit-4-CodeQuiz/
